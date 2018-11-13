@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "es2015",
+    "target": "es6",
+    "lib":["es6", "dom"],
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
@@ -12,7 +13,5 @@
   },
   "exclude": [
     "node_modules",
-    "typings/main",
-    "typings/main.d.ts"
   ]
 }

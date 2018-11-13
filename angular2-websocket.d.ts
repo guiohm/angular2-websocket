@@ -1,9 +1,9 @@
 import { Observable, Subject } from 'rxjs';
 export declare class $WebSocket {
     private url;
-    private protocols;
-    private config;
-    private binaryType;
+    private protocols?;
+    private config?;
+    private binaryType?;
     private static Helpers;
     private reconnectAttempts;
     private sendQueue;
@@ -76,10 +76,6 @@ export declare class $WebSocket {
     close(force?: boolean, keepReconnectIfNotNormalClose?: boolean): this;
     getBackoffDelay(attempt: any): number;
     setInternalState(state: any): void;
-    /**
-     * Could be -1 if not initzialized yet
-     * @returns {number}
-     */
     getReadyState(): number;
 }
 export interface WebSocketConfig {
@@ -90,6 +86,6 @@ export interface WebSocketConfig {
 export declare enum WebSocketSendMode {
     Direct = 0,
     Promise = 1,
-    Observable = 2,
+    Observable = 2
 }
-export declare type BinaryType = "blob" | "arraybuffer";
+export declare type BinaryType = 'blob' | 'arraybuffer';

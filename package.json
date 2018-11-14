@@ -14,7 +14,6 @@
     "url": "git+https://github.com/afrad/angular2-websocket.git"
   },
   "dependencies": {
-    "bluebird": "^3.4.6"
   },
   "peerDependencies": {
     "reflect-metadata": "^0.1.8",
@@ -26,7 +25,6 @@
     "@angular/common": "^7.0.3",
     "@angular/compiler": "^7.0.3",
     "@angular/core": "7.0.3",
-    "@types/bluebird": "^3.0.35",
     "codelyzer": "^4.3.0",
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.4",

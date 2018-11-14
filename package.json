@@ -17,8 +17,6 @@
     "rxjs": "^6.1.0"
   },
   "peerDependencies": {
-    "reflect-metadata": "^0.1.8",
-    "zone.js": "^0.8.12"
   },
   "devDependencies": {
     "@angular/cli": "^7.0.5",
@@ -29,7 +27,6 @@
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.4",
     "grunt-typescript": "~0.2.4",
-    "reflect-metadata": "^0.1.8",
     "tslint": "~5.7.0",
     "typescript": "3",
     "zone.js": "^0.8.12"

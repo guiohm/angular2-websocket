@@ -1,4 +1,3 @@
-import {Injectable} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 
 export class $WebSocket {
@@ -46,6 +45,7 @@ export class $WebSocket {
         private protocols?: Array<string>,
         private config?: WebSocketConfig,
         private binaryType?: BinaryType)
+    // tslint:disable-next-line:one-line
     {
         let match = new RegExp('wss?:\/\/').test(url);
         if (!match) {
@@ -149,6 +149,7 @@ export class $WebSocket {
         });
     }
 
+    // tslint:disable-next-line:member-ordering
     private send4Mode: WebSocketSendMode = WebSocketSendMode.Observable;
 
     /**
@@ -290,7 +291,7 @@ export class $WebSocket {
         return this;
     }
 
-    close(force: boolean = false, keepReconnectIfNotNormalClose?: boolean) {
+    close(force = false, keepReconnectIfNotNormalClose?: boolean) {
         if (!keepReconnectIfNotNormalClose) {
             this.config.reconnectIfNotNormalClose = false;
         }
@@ -340,4 +341,4 @@ export enum WebSocketSendMode {
     Direct, Promise, Observable
 }
 
-export type BinaryType = "blob" | "arraybuffer";
+export type BinaryType = 'blob' | 'arraybuffer';
